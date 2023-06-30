@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&display=swap" rel="stylesheet">
+            <title>Payment</title>
+        </head>
+        <style>
+            html{
+            scroll-behavior: smooth;
+            width: 100%;
+            }
+        </style>
+    <body class="bg-[#F3E8FF]">
+        <nav class="bg-gray-800 text-white flex justify-between items-center py-5 px-5">
+            <h1 class=" ml-[40%] text-xl font-bold">Shoptronics</h1>
+            <ul class="flex space-x-10 text-gray-300">
+                <li>
+                <a href="#support">Support</a>
+                </li>
+                
+                <li>
+                    <a href ="cart.html" target="blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href ="account.html" target="blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>     
+        </nav>
+<!--card  -->
+        <h1 class=" text-2xl font-bold text-black ml-[40%] mt-[3%] ">Payment Method</h1>
+        <form id="payment-form">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method" value="card"  class="ml-[20%] mt-[3%]">
+                    Card Payment
+                </label>
+                <div id="card-payment-fields" style="display:none;" >
+                    <label class=" flex flex-row absolute top-[57%] left-[45%]">
+                        Card Number :
+                        <input type="text" name="card-number">
+                    </label>
+                    <a href ="" target="blank">
+                        <button class="absolute top-[52%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit Payment</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+<!-- COD -->
+        <form id="payment-form-cod">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method-2" value="cod" class="ml-[20%] mt-[2%]">
+                    Cash on delivery
+                </label>
+                <div id="cod-payment-fields" style="display:none;">
+                    <a href ="" target="blank">
+                        <button class="absolute top-[46%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit</button>
+                    </a>
+                </div>
+            </div>
+        </form>     
+<!-- Net Banking -->
+        <form id="payment-form-net">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method-3" value="net" class="ml-[20%] mt-[2%]">
+                    Internet Banking
+                </label>
+                <div id="net-payment-fields" style="display:none;">
+                    <label class=" flex flex-row absolute top-[50%] left-[45%]">
+                        Username :
+                        <input type="text" name="net-id">
+                    </label>
+                    <a href ="" target="blank">
+                        <button class="absolute top-[46%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit Payment</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+<!-- UPI -->
+        <form id="payment-form-upi">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method-4" value="upi" class="ml-[20%] mt-[2%]">
+                    UPI Payment
+                </label>
+                <div id="upi-payment-fields" style="display:none;">
+                    <label class=" flex flex-row absolute top-[50%] left-[45%]">
+                        UPI ID :
+                        <input type="text" name="upi-id">
+                    </label>
+                    <a href ="" target="blank">
+                        <button class="absolute top-[46%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit Payment</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+<!-- EMI -->
+        <form id="payment-form-emi">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method-5" value="emi"  class="ml-[20%] mt-[2%]">
+                    EMI
+                </label>
+                <div id="emi-payment-fields" style="display:none;" >
+                    <label class=" flex flex-row absolute top-[57%] left-[45%]">
+                        Card Number :
+                        <input type="text" name="card-number">
+                    </label>
+                    <a href ="" target="blank">
+                        <button class="absolute top-[52%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit Payment</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+<!-- pay later -->
+        <form id="payment-form-pay">
+            <div class="relative">
+                <label>
+                    <input type="radio" name="payment-method-6" value="pay"  class="ml-[20%] mt-[2%]">
+                    Pay later
+                </label>
+                <div id="pay-payment-fields" style="display:none;" >
+                    <label class=" flex flex-row absolute top-[57%] left-[45%]">
+                        Password :
+                        <input type="password" name="pay-id">
+                    </label>
+                    <a href ="" target="blank">
+                        <button class="absolute top-[52%] left-[70%] px-6 py-1.5 bg-white text-sm text-zinc-200 font-semibold rounded-full border border-zinc-200 hover:text-black hover:bg-gray-400 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2" id="send" onclick="message()">Submit Payment</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+        <nav class="bg-gray-800 text-white flex justify-between py-4 px-5 mt-[2%]" id="support">
+            <ul class="flex space-x-10 text-gray-300">
+                <div class="flex flex-col ml-[20%]">
+                    <h1 class=" text-l font-bold">About</h1>
+                    <li>
+                        <a href="">Contact Us<br>About Us<br>Careers<br>Shoptronics Stories<br>Press<br> Wholesale<br>Corporate Information</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[40%]">
+                    <h1 class=" text-l font-bold">Help</h1>
+                    <li>
+                        <a href="">Payments<br>Shipping<br>Cancellation & Returns<br>FAQ<br>Report Infringement</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">CONSUMER POLICY</h1>
+                    <li>
+                        <a href="">Return Policy<br>Terms Of Use<br>Security<br>Privacy<br>Sitemap<br>Grievance Redressal<br>EPR Compliance</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[90%]">
+                    <h1 class=" text-l font-bold">SOCIAL</h1>
+                    <li>
+                        <a href="">Facebook<br>Twitter<br>YouTube</a>
+                    </li>
+                </div>  
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">Mail Us:</h1>
+                    <li>
+                        <a href="">Shoptronics@gmail.com<br> <h1 class=" text-l font-bold">Telephone:</h1>0123-456789</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">Registered Office Address:</h1>
+                    <li>
+                        <a href="">Shoptronics Internet Private Limited,<br> Buildings ABC, ABCDE<br> & ABCD Embassy Tech Village,<br> Outer Ring Road,<br> Smart Village,<br>Bengaluru, 123456,<br>Karnataka, India</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <script src="./luhn.js"></script> 
+        <script src="./payment_card.js"></script> 
+        <script src="./regex.js"></script> 
+        <script src="./payment_upi.js"></script>
+        <script src="./yono.js"></script> 
+        <script src="./payment_net.js"></script>  
+        <script src="./easy.js"></script> 
+        <script src="./payment_emi.js"></script> 
+        <script src="./later.js"></script> 
+        <script src="./payment_pay.js"></script>
+        <script src="./delivery.js"></script> 
+        <script src="./payment_cod.js"></script>  
+    </body>
+</html>

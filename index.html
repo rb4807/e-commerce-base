@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&display=swap" rel="stylesheet">
+        <title>Home</title>
+    </head>
+    <style>
+        html{
+        scroll-behavior: smooth;
+        width: 100%;
+        }
+    </style>
+    <body class="bg-[#F3E8FF]">
+        <nav class="bg-gray-800 text-white flex justify-between items-center py-4 px-5">
+            <h1 class=" ml-[13%] text-xl font-bold">Shoptronics</h1>
+                <div class="w-[500px]  rounded flex items-center space-x-5">
+                    <input class="full bg-white outline- py-2 px-[35%] text-xs text-gray-700 placeholder:ml-[0%] " type="text" placeholder="Search for products">
+                     <i class="fa-solid fa-magnifying-glass px-2 text-gray-500"></i>   
+                </div>
+                <ul class="flex space-x-10 text-gray-300">
+                    <li>
+                    <a href="#support">Support</a>
+                    </li>
+                    
+                    <li>
+                        <a href ="cart.html" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="6" cy="19" r="2" />
+                                <circle cx="17" cy="19" r="2" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href ="account.html" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>   
+        </nav>
+        
+        <div class="flex flex-row flex-wrap mt-[1%] text-sm ">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[11.2%] " src="./assets/mobile.webp">
+            <img class="object right w-[3.5rem] h-[3.55rem]  ml-[13%] " src="./assets/home appliances.webp">
+            <img class="object right w-[3.5rem] h-[3.5rem]  ml-[15%]" src="./assets/laptop.webp">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[13.5%]" src="./assets/accessories.jpeg">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[13.5%]" src="./assets/smart things.webp">
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-evenly text-sm "> 
+            <div>
+                <a href ="#mobile"> 
+                    <button class=" text-black font-semibold">Mobile</button>
+                </a>
+            </div>
+            <div>
+                <a href ="#home"> 
+                    <button class="  text-black font-semibold">Home Appliances</button>
+                </a>
+            </div>
+            <div>
+                <a href ="#lap"> 
+                    <button class=" text-black font-semibold ">Laptop&Monitors</button>
+                </a>
+            </div>
+            <div>
+                <a href ="#access"> 
+                    <button class="text-black font-semibold">Accessories</button>
+                </a>
+            </div>
+            <div>
+                <a href ="#lap"> 
+                    <button class=" px-2 py-1 text-black font-semibold">SmartThings</button>
+                </a>
+            </div>
+        </div>
+
+<!--video-->
+        <div class="relative">
+            <div class="bg-video" >
+                <video class="bg-video__content mt-[1%] mb-[1%]" autoplay muted loop width="1500" height="200">
+                    <source src="assets/s23 home.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <a href ="s23.html" target="blank">
+                    <div class="absolute top-[50%] left-0">
+                        <h1 class="font-dmserif text-2xl font-bold text-white mt-[38%] ml-[10%]">Galaxy S23|S23+<br>Starting at 3125*/month</h1>
+                        <p class="font-dmserif text-l  text-white ml-[10%]" id="mobile">Incl.7000* off cashback & app voucher</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+<!--mobile-->
+        <div class="relative">
+            <div class="bg-white text-white  py-[8%] px-[3%] ml-[1%] mr-[1%] rounded-xl">
+                <div class="absolute top-[30%] left-12 ">
+                    <h1 class="font-dmserif text-2xl font-bold text-black" id="home">Mobile to <br> Check out</h1> 
+                </div>
+                <div class="flex flex-row absolute top-10 text-sm ">
+                    <img class=" w-[7.5rem] h-[7.5rem]  ml-[17%] " src="./assets/snapdragon.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem]  ml-[5%]" src="./assets/iphone.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[9%]  " src="./assets/oneplus.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[12%] " src="./assets/most loved.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem]  ml-[7%]" src="./assets/poco.webp">
+                    <img class="w-[7.5rem] h-[7.5rem]  ml-[10%]" src="./assets/full hd.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[6%] " src="./assets/best discount.webp">
+                </div>
+            </div>
+            <div>
+                <a href ="s23.html" target="blank">
+                    <div class="absolute top-[52%] left-[17%]">
+                        <p class="font-dmserif text-l text-Black mt-[75%]">Samsung</p>
+                    </div>
+                </a>
+                <a href ="14pro.html" target="blank">
+                    <div class="absolute top-[58%] left-[27.5%] ">
+                        <p class="font-dmserif text-l text-Black ml-[29%] mt-[75%] ">Iphone</p>
+                    </div>
+                </a>
+                <a href ="10r.html" target="blank">
+                    <div class="absolute top-[60%] left-[40%]">
+                        <p class="font-dmserif text-l text-Black ml-[41%] mt-[75%]">One+</p>
+                    </div>
+                </a>
+                <a href ="g62.html" target="blank">
+                    <div class="absolute  top-[52%] left-[52.5%]">
+                        <p class="font-dmserif text-l text-Black ml-[54.5%] mt-[75%]">Motorola</p>
+                    </div>
+                </a>
+                <a href ="x5.html" target="blank">
+                    <div class="absolute top-[61%] left-[65%]">
+                        <p class="font-dmserif text-l text-Black ml-[67%] mt-[75%]">Pocco</p>
+                    </div>
+                </a>
+                <a href ="t1.html" target="blank">
+                    <div class="absolute top-[65%] left-[79%]">
+                        <p class="font-dmserif text-l text-Black ml-[80%] mt-[75%]">Vivo</p>
+                    </div>
+                </a>
+                <a href ="c5.html" target="blank">
+                    <div class="absolute top-[57%] left-[89%]">
+                        <p class="font-dmserif text-l text-Black ml-[92%] mt-[75%]">Realme</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+<!--Home Appliances -->
+        <div class="relative">
+            <div class="bg-white text-white py-[8%] px-[3%]  ml-[1%] mr-[1%] mt-[1.5%] rounded-xl">
+                <div class="absolute top-[20%] left-12">
+                    <h1 class="font-dmserif text-2xl font-bold text-black mt-[5%] ml-[5%]">Home &<br>Kitchen<br>Essentials</h1>  
+                </div>
+                <div class="flex flex-row absolute top-10 text-sm   ">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[17%]" src="./assets/fridge home..webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[5%]" src="./assets/mixi home.png">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[7%]  " src="./assets/washing home.png">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[8%] " src="./assets/ac home.avif">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[4%]" src="./assets/tv home.png">
+                    <img class="w-[7.5rem] h-[7.5rem]  ml-[4%]" src="./assets/oven home.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[6%] " src="./assets/tabletop home.jpg">
+                </div>
+            </div>
+            <div>
+                <a href ="fridge.html">
+                    <div class="absolute top-[42%] left-[15%]">
+                        <p class="font-dmserif text-l text-Black mt-[92%] ml-[13%]">Refrigerator</p>
+                    </div>
+                </a>
+                <a href ="mixer.html">
+                    <div class="absolute top-[64%] left-[29%] ">
+                        <p class="font-dmserif text-l text-Black mt-[92%] ml-[26%]">Mixer</p>
+                    </div>
+                </a>
+                <a href ="washing_machine.html">
+                    <div class="absolute top-[80%] left-[40%]">
+                        <p class="font-dmserif text-l text-Black ">Washing Machine</p>
+                    </div>
+                </a>
+                <a href ="ac.html">
+                    <div class="absolute top-[70%] left-[57%] ">
+                        <p class="font-dmserif text-l text-Black mt-[92%] ml-[53.5%]">AC</p>
+                    </div>
+                </a>
+                <a href ="tv.html">
+                    <div class="absolute top-[50%] left-[64%]">
+                        <p class="font-dmserif text-l text-Black mt-[92%] ml-[65%]">Television</p>
+                    </div>
+                </a>
+                <a href ="oven.html">
+                    <div class="absolute top-[64%] left-[77%]">
+                        <p class="font-dmserif text-l text-Black mt-[92%] ml-[79%]">Oven</p>
+                    </div>
+                </a>
+                <a href ="table_top.html">
+                    <div class="absolute top-[80%] left-[89%]">
+                        <p class="font-dmserif text-l text-Black ">Tabletop Grinder</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <img class=" mt-[1%] w-[90rem] h-[20rem]" src="./assets/tv full.avif">
+        </div>
+<!-- accessories -->
+        <div class="relative">
+            <div class="bg-white text-white py-[8%] px-[3%]  ml-[1%] mr-[1%] mt-[1%] rounded-xl">
+                <div class="absolute top-[5%] left-10">
+                    <h1 class="font-dmserif text-2xl font-bold text-black mt-[41%] ml-[5%]" id="access">Accessories</h1>  
+                </div>
+                <div class="flex flex-row absolute top-10  text-sm">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[17%]" src="./assets/headphone.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[5%]" src="./assets/pendrive.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[9%]  " src="./assets/wifi.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[10%] " src="./assets/keyboard.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[7%]" src="./assets/mouse.jpg">
+                    <img class="w-[7.5rem] h-[7.5rem] ml-[6%]" src="./assets/powerbank home.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[3%] " src="./assets/airpodes home.jpg">
+                </div>
+            </div>
+            <div>
+                <a href ="headphone.html">
+                    <div class="absolute top-[8%] left-[13%] ">
+                        <p class="font-dmserif text-l text-Black mt-[135%] ml-[13%]">Headphone</p>
+                    </div>
+                </a>
+                <a href ="pendrive.html">
+                    <div class="absolute top-[12%] left-[22.5%] ">
+                        <p class="font-dmserif text-l text-Black mt-[135%] ml-[26%]">Pendrive</p>
+                    </div>
+                </a>
+                <a href ="router.html">
+                    <div class="absolute top-[14.5%] left-[39%] ">
+                        <p class="font-dmserif text-l text-Black mt-[135%] ml-[40%]">Router</p>
+                    </div>
+                </a>
+                <a href ="combo.html">
+                    <div class="absolute top-[10.7%] left-[52%] ">
+                        <p class="font-dmserif text-l text-Black mt-[135%] ml-[53.5%]">Keyboard</p>
+                    </div>
+                </a>
+                <a href ="mouse.html">
+                    <div class="absolute top-[14%] left-[67%] ">
+                        <p class="font-dmserif text-l text-Black mt-[135%] ml-[65%]">Mouse</p>
+                    </div>
+                </a>
+                <a href ="power_bank.html">
+                    <div class="absolute top-[22%] left-[79%] ">
+                        <p class="font-dmserif text-l text-Black ">Power Bank</p>
+                    </div>
+                </a>
+                <a href ="boat.html">
+                    <div class="absolute top-[11%] left-[86%] ">
+                        <p class="font-dmserif text-l  text-Black mt-[135%] ml-[90%]">Airpodes</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <img class=" mt-[1%] w-[90rem] h-[35rem]  " src="./assets/canon.jpg">
+            </div>
+        </div>
+<!-- electronics and smartthings -->
+        <div class="relative">
+            <div class="bg-white text-white py-[8%] px-[3%]  ml-[1%] mr-[1%] mt-[1%] rounded-xl">
+                <div class="absolute top-[36%] left-12">
+                    <h1 class="font-dmserif text-2xl font-bold text-black mt-[2%] ml-[5%]" id="lap">Best of <br>Electronics</h1>  
+                </div>
+                <div class="flex flex-row text-sm absolute top-10">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[17%]" src="./assets/camera.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[5%]" src="./assets/monitor.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[7%]  " src="./assets/smartwatch.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[7%] " src="./assets/printer.jpg">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[5%]" src="./assets/cctv.jpg">
+                    <img class="w-[7.5rem] h-[7.5rem] ml-[6%]" src="./assets/alexa.webp">
+                    <img class=" w-[7.5rem] h-[7.5rem] ml-[6%] " src="./assets/brush.webp">
+                </div>
+            </div>
+            <div>
+                <a href ="nikon.html">
+                    <div class="absolute top-[80%] left-[17%] ">
+                        <p class="font-dmserif text-l text-Black ">DLSR</p>
+                    </div>
+                </a>
+                <a href ="monitor and laptop.html">
+                    <div class="absolute top-[80%] left-[29%]">
+                        <p class="font-dmserif text-l  text-Black ">Monitor</p>
+                    </div>
+                </a>
+                <a href ="boAt_smartwatch.html">
+                    <div class="absolute absolute top-[80%] left-[41%] ">
+                        <p class="font-dmserif text-l text-Black ">Smartwatch</p>
+                    </div>
+                </a>
+                <a href ="canon.html">
+                    <div class="absolute top-[80%] left-[55%] ">
+                        <p class="font-dmserif text-l text-Black ">Printer</p>
+                    </div>
+                </a>
+                <a href ="mi camera.html">
+                    <div class="absolute top-[80%] left-[65%]">
+                        <p class="font-dmserif text-l text-Black ">Security Camera</p>
+                    </div>
+                </a>
+                <a href ="alexa.html">
+                    <div class="absolute top-[80%] left-[80%] ">
+                        <p class="font-dmserif text-l text-Black ">Alexa</p>
+                    </div>
+                </a>
+                <a href ="brush.html">
+                    <div class="absolute absolute top-[80%] left-[90%] ">
+                        <p class="font-dmserif text-l  text-Black ">Electric Brush</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+<!-- footer -->
+            <nav class="bg-gray-800 text-white flex justify-between py-4 px-5" id="support">
+                <ul class="flex space-x-10 text-gray-300">
+                    <div class="flex flex-col ml-[20%]">
+                        <h1 class=" text-l font-bold">About</h1>
+                        <li>
+                            <a href="">Contact Us<br>About Us<br>Careers<br>Shoptronics Stories<br>Press<br> Wholesale<br>Corporate Information</a>
+                        </li>
+                    </div>
+                    <div class="flex flex-col ml-[40%]">
+                        <h1 class=" text-l font-bold">Help</h1>
+                        <li>
+                            <a href="">Payments<br>Shipping<br>Cancellation & Returns<br>FAQ<br>Report Infringement</a>
+                        </li>
+                    </div>
+                    <div class="flex flex-col ml-[55%]">
+                        <h1 class=" text-l font-bold">CONSUMER POLICY</h1>
+                        <li>
+                            <a href="">Return Policy<br>Terms Of Use<br>Security<br>Privacy<br>Sitemap<br>Grievance Redressal<br>EPR Compliance</a>
+                        </li>
+                    </div>
+                    <div class="flex flex-col ml-[90%]">
+                        <h1 class=" text-l font-bold">SOCIAL</h1>
+                        <li>
+                            <a href="">Facebook<br>Twitter<br>YouTube</a>
+                        </li>
+                    </div>  
+                    <div class="flex flex-col ml-[55%]">
+                        <h1 class=" text-l font-bold">Mail Us:</h1>
+                        <li>
+                            <a href="">Shoptronics@gmail.com<br> <h1 class=" text-l font-bold">Telephone:</h1>0123-456789</a>
+                        </li>
+                    </div>
+                    <div class="flex flex-col ml-[55%]">
+                        <h1 class=" text-l font-bold">Registered Office Address:</h1>
+                        <li>
+                            <a href="">Shoptronics Internet Private Limited,<br> Buildings ABC, ABCDE<br> & ABCD Embassy Tech Village,<br> Outer Ring Road,<br> Smart Village,<br>Bengaluru, 123456,<br>Karnataka, India</a>
+                        </li>
+                    </div>
+                   
+                </ul>
+            </nav>
+            <nav class="bg-gray-800 text-white flex justify-between py-4 px-5">  
+                <div class="flex flex-row mt-0.5 ml-[43%] ">
+                    <img class=" w-[2rem] h-[2rem] ml-[6%] " src="./assets/white.png">
+                    <div class="mt-1 div text-gray-300">
+                        <a href="dev.html">Desginer</a>
+                    </div>
+                </div>
+            </nav>
+    </body>
+</html> 

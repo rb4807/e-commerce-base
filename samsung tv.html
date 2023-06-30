@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&display=swap" rel="stylesheet">
+            <title>Samsung</title>
+        </head>
+        <style>
+            html{
+            scroll-behavior: smooth;
+            width: 100%;
+            }
+        </style>
+    <body class="bg-[#F3E8FF]">
+        <nav class="bg-gray-800 text-white flex justify-between items-center py-4 px-5">
+            <h1 class=" ml-[13%] text-xl font-bold">Shoptronics</h1>
+                <div class="w-[500px]  rounded flex items-center space-x-5">
+                    <input class="full bg-white outline- py-2 px-[35%] text-xs text-gray-700 placeholder:ml-[0%] " type="text" placeholder="Search for products">
+                    <i class="fa-solid fa-magnifying-glass px-2 text-gray-500"></i>   
+                </div>
+                <ul class="flex space-x-10 text-gray-300">
+                    <li>
+                    <a href="#support">Support</a>
+                    </li>
+                    
+                    <li>
+                        <a href ="cart.html" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="6" cy="19" r="2" />
+                                <circle cx="17" cy="19" r="2" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href ="account.html" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>      
+        </nav>
+        <div class="flex flex-row flex-wrap mt-[1%] text-sm ">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[11.2%] " src="./assets/mobile.webp">
+            <img class="object right w-[3.5rem] h-[3.55rem]  ml-[13%] " src="./assets/home appliances.webp">
+            <img class="object right w-[3.5rem] h-[3.5rem]  ml-[15%]" src="./assets/laptop.webp">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[13.5%]" src="./assets/accessories.jpeg">
+            <img class="object right w-[3.5rem] h-[3.5rem] ml-[13.5%]" src="./assets/smart things.webp">
+        </div>
+        <div class="flex flex-row flex-wrap justify-evenly text-sm "> 
+            <div>
+                <a href ="index.html"> 
+                    <button class=" text-black font-semibold">Mobile</button>
+                </a>
+            </div>
+            <div>
+                <a href ="index.html"> 
+                    <button class="  text-black font-semibold">Home Appliances</button>
+                </a>
+            </div>
+            <div>
+                <a href ="index.html"> 
+                    <button class=" text-black font-semibold ">Laptop&Monitors</button>
+                </a>
+            </div>
+            <div>
+                <a href ="index.html"> 
+                    <button class="text-black font-semibold">Accessories</button>
+                </a>
+            </div>
+            <div>
+                <a href ="index.html"> 
+                    <button class=" px-2 py-1 text-black font-semibold">SmartThings</button>
+                </a>
+            </div>
+        </div>
+        <section>
+            <div class="relative">
+                <ul id="slider">
+                    <li class="h-[64vh] ">
+                        <div class="ml-[5%] mt-[1%] ">
+                            <img class="h-full object-cover" src="./assets/samsung tv 1st.webp">
+                        </div>
+                    </li>
+                    <li class="h-[64vh] relative hidden">
+                        <div class="ml-[5%] mt-[1%] ">
+                            <img class="h-full object-cover" src="./assets/samsung tv 2nd.webp">
+                        </div>
+                    </li>
+                </ul>
+                <div class="absolute px-7 flex h-full w-[34.8%] top-0 left-10   ">
+                    <div class="my-auto w-full flex justify-between">
+                        <button onclick="prev()" class="bg-black p-3 rounded-full bg-opacity-40">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <line x1="5" y1="12" x2="11" y2="18" />
+                                <line x1="5" y1="12" x2="11" y2="6" />
+                            </svg>
+                        </button>
+                        <button onclick="next()" class="bg-black p-3 rounded-full bg-opacity-40">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <line x1="13" y1="18" x2="19" y2="12" />
+                                <line x1="13" y1="6" x2="19" y2="12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-row absolute  top-[105%] left-[3%]">
+                    <div class="ml-[6%]">
+                        <a href ="" target="blank">
+                            <button id="add-to-cart-button" class="px-20 py-2  text-sm text-zinc-200 bg-orange-500 font-semibold rounded-xl border border-zinc-200 hover:text-white hover:bg-sky-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2">Add to cart</button>
+                        </a>
+                    </div>
+                    <div class="ml-[1%]">
+                        <a href ="payment.html" target="blank">
+                            <button class="px-24 py-7  text-sm text-zinc-200 bg-emerald-400 font-semibold rounded-xl border border-zinc-200 hover:text-black hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2">Buy</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute  top-0 left-[39%]">
+                    <h1 class=" text-2xl font-bold text-black ">SAMSUNG The Frame 108 cm (43 inch) QLED Ultra HD<br>(4K) Smart Tizen TV with Matte Display</h1>
+                    <button class="px-1 py-1  top-[6.2%]  text-sm text-white bg-green-500 font-semibold rounded focus:outline-none focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2">4.3</button>
+                    <label class="text-sm text-gray-700  mb-2 ml-[0.3%] top-[6.4%] ">
+                        4.36,991 Ratings & 755 Reviews
+                    </label>
+                    <h1 class=" text-3xl font-bold text-black ">₹56,990</h1>
+                    <p class="font-dmserif text-xl  text-black">+ ₹69 Secured Packaging Fee</p>
+                    <p class="font-dmserif text-xl font-bold text-black">Available offers</p> 
+                    <p class="font-dmserif text-l  text-black">
+                        Bank Offer 10% Off on Axis Bank Credit Card T&C.
+                        <br>Bank Offer 5% Cashback on Flipkart Axis Bank Card T&C.
+                        <br>Partner Offer Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500.
+                        <br>Partner Offer Buy this product & Get upto ₹500 off on Furniture.
+                    </p> 
+                </div>
+                <div class="bg-white container mx-auto p-[5%] max-w-3xl px-3 py-5 absolute  top-[79%] left-[39%] border border-zinc-200">  
+                    <label class="block text-gray-700 font-bold mb-2 " for="phone">
+                        Delivery
+                    </label>
+                    <input class="form-input p-2 w-[30%] rounded-none focus:outline-none focus:underline focus:ring-2 focus:ring-blue-500 border border-zinc-200" type="tel" id="phone" name="phone" placeholder="Enter Delivery Pincode" required> 
+                </div>
+                <div class="absolute  top-[108%] left-[39%]"><h4 class=" text-2xl font-bold text-black ">Ratings & Reviews</h4>
+                </div>
+                <div class="bg-white container mx-auto p-[5%] max-w-3xl px-3 py-5 absolute  top-[120%] left-[39%] border border-zinc-200">
+                    <img class=" w-[150%] h-[80%] " src="./assets/sam tv review.png">
+                </div> 
+            </div>
+            <div class="relative">
+                <div class="ml-[5%] mt-[10%]">      
+                    <h1 class=" text-3xl font-bold text-black ">Specifications</h1>
+                    <div class="mt-[2%]">
+                        <h6 class="font-dmserif text-l font-bold text-black">Brand<br>Color<br>Display<br>Screen Type<br>Ram Capacity<br>Storage Memory
+                    </div>
+                </div>
+                <div class="absolute  top-[18.5%] left-[21%]">
+                    <p class="font-dmserif text-l  text-black">
+                        <br>Samsung<br>Black<br>43inch<br>LED Display<br>1.5 GB<br>8 GB
+                    </p>
+                </div>           
+            </div>    
+        </section>
+        <div class="mt-[40%]">
+            <img class="object right w-full h-[30rem]" src="./assets/cashback.jpg">
+        </div>
+        <nav class="bg-gray-800 text-white flex justify-between py-4 px-5" id="support">
+            <ul class="flex space-x-10 text-gray-300">
+                <div class="flex flex-col ml-[20%]">
+                    <h1 class=" text-l font-bold">About</h1>
+                    <li>
+                        <a href="">Contact Us<br>About Us<br>Careers<br>Shoptronics Stories<br>Press<br> Wholesale<br>Corporate Information</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[40%]">
+                    <h1 class=" text-l font-bold">Help</h1>
+                    <li>
+                        <a href="">Payments<br>Shipping<br>Cancellation & Returns<br>FAQ<br>Report Infringement</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">CONSUMER POLICY</h1>
+                    <li>
+                        <a href="">Return Policy<br>Terms Of Use<br>Security<br>Privacy<br>Sitemap<br>Grievance Redressal<br>EPR Compliance</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[90%]">
+                    <h1 class=" text-l font-bold">SOCIAL</h1>
+                    <li>
+                        <a href="">Facebook<br>Twitter<br>YouTube</a>
+                    </li>
+                </div>  
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">Mail Us:</h1>
+                    <li>
+                        <a href="">Shoptronics@gmail.com<br> <h1 class=" text-l font-bold">Telephone:</h1>0123-456789</a>
+                    </li>
+                </div>
+                <div class="flex flex-col ml-[55%]">
+                    <h1 class=" text-l font-bold">Registered Office Address:</h1>
+                    <li>
+                        <a href="">Shoptronics Internet Private Limited,<br> Buildings ABC, ABCDE<br> & ABCD Embassy Tech Village,<br> Outer Ring Road,<br> Smart Village,<br>Bengaluru, 123456,<br>Karnataka, India</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <script src="./main.js"></script> 
+        <script src="./add_to_cart.js"></script>         
+    </body>
+</html> 
